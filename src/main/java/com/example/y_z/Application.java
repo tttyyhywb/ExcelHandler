@@ -12,14 +12,13 @@ import java.io.IOException;
 
 public class Application {
 
+    //target
+    static String targetLocation = "src/main/resources/result.xlsx";
+
+    //from
+    static String fileLocation = "src/main/resources/excel.xlsx";
 
     public static void main(String[] args) throws IOException {
-
-        //target
-        String targetLocation = "src/main/resources/result.xlsx";
-
-        //from
-        String fileLocation = "src/main/resources/excel.xlsx";
 
         FileInputStream file = new FileInputStream(new File(fileLocation));
         Workbook workbook = new XSSFWorkbook(file);
